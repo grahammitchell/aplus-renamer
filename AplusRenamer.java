@@ -1,7 +1,5 @@
 import java.io.File;
 import java.util.ArrayList;
-// import java.util.Collections;
-// import java.util.Comparator;
 import java.util.Scanner;
 import java.io.PrintWriter;
 import javax.swing.JOptionPane;
@@ -33,15 +31,6 @@ public class AplusRenamer
 			System.out.println("Nothing to do.");
 			System.exit(0);
 		}
-
-		// Sort longest to shortest (the fancy way)
-		/* Collections.sort(classNames, new Comparator<String>() {
-			public int compare( String a, String b ) {
-				int diff = b.length() - a.length();
-				return ( diff!=0 ) ? diff : a.compareTo(b);
-			}
-		});
-		*/
 
 		// Sort longest to shortest using exchange sort to avoid creating an inner class
 		for ( int i=0; i<classNames.size(); i++ )
@@ -110,24 +99,3 @@ public class AplusRenamer
 		return fname.substring(0, fname.lastIndexOf('.'));
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
